@@ -2,7 +2,7 @@ package com.xl.view;
 
 import android.view.*;
 import android.widget.*;
-import com.asm.wenhejiankang.*;
+
 import java.util.*;
 
 import android.app.Activity;
@@ -26,14 +26,14 @@ public class ItemAdapter extends BaseAdapter
 
 
 		private List<String> mData;
-		XlApplication application;
+		
 		private LayoutInflater mInflater;
 
 		public ItemAdapter(Context context)
 			{
 				this.mInflater = LayoutInflater.from(context);
 				this.context=context;
-				application = (XlApplication)((Activity)context).getApplication();
+				
 				this.mData=new ArrayList<String>();
 			}
 
